@@ -13,7 +13,6 @@ parser = parser.parse_args()
 
 #inicialização de arquivos e variaveis
 arq = open(file="databaseOPGG.csv", mode='w', encoding="utf-8")
-cd = "C:/selenium_chromeDriver_teste/chromedriver"
 param = "api_key=" + parser.key
 nome_players = []
 
@@ -46,7 +45,7 @@ for player in nome_players:
 	erro = 0
 
 	#abrindo o Chrome com Selenium e coletando as variaveis desejadas
-	driver = webdriver.Chrome(cd)
+	driver = webdriver.Chrome()
 	driver.get("https://br.op.gg/summoner/userName={}".format(player))
 
 	#script para que o Selenuim abra todas as abas de todos os jogos do player, apenas abrindo as abas que fica disponível os dados
