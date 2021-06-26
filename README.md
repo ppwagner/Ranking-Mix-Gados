@@ -16,5 +16,5 @@ Esse repositório em o objetivo de replicar o sistema de "OPGG Score" do site OP
 ## Arquivos
 * `getDataOPGG.py`: Serve para gerar o dataset afim de treinar e válidar o modelo feito.
 * `criaModelo.ipynb`: Com o output de `getDataOPGG.py` cria e treina um modelo afim de prever o OPGG Score de uma partida.
-* `getMixMatch.py`: Gera um CSV com os dados necessários para a execução do modelo a partir de uma partida de modo torneio obtida da API da Riot Games gravada em um JSON.
+* `getMixMatch.py`: Gera um CSV com os dados necessários para a execução do modelo a partir de uma partida de modo torneio obtida da API da Riot Games gravada em um JSON (uma vez que o output da API da Riot é um arquivo JSON).
 * `runModel.py`: Com o output dos dois últimos scripts é possível utilizá-lo para exibir os resultados esperados.
