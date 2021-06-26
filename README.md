@@ -11,7 +11,7 @@ Esse repositório em o objetivo de replicar o sistema de "OPGG Score" do site OP
 
 * O segundo requisito basta baixar no site oficial do Python o interpretador.
 
-* O terceito requisito pode ser resolvido com o PIP que vem com o interpretador python. Basta utilizar no prompt de comando o seguinte código: `pip install -r requirements.txt`.
+* O terceito requisito pode ser resolvido com o PIP que vem com o interpretador python. Basta utilizar no prompt de comando o seguinte código: `pip install -r requirements.txt`. OBS: Entre as dependências está o selenium, essa biblioteca precisa de um drive de algum browser para realizar suas operações. Nesse projeto foi utilizado o browser Google Chrome para isso, ou seja, é necessário baixar o ChromeDrive, abri-lo uma única vez e colocar seu caminho de instalação (PATH) nas variáveis de ambiente do seu sistema (windows) para funcionar corretamente.
 
 ## Arquivos
 * `getDataOPGG.py`: Serve para gerar o dataset afim de treinar e válidar o modelo feito.
