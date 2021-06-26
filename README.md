@@ -12,3 +12,9 @@ Esse repositório em o objetivo de replicar o sistema de "OPGG Score" do site OP
 * O segundo requisito basta baixar no site oficial do Python o interpretador.
 
 * O terceito requisito pode ser resolvido com o PIP que vem com o interpretador python. Basta utilizar no prompt de comando o seguinte código: `pip install -r requirements.txt`.
+
+## Arquivos
+* `getDataOPGG.py`: Serve para gerar o dataset afim de treinar e válidar o modelo feito.
+* `criaModelo.ipynb`: Com o output de `getDataOPGG.py` cria e treina um modelo afim de prever o OPGG Score de uma partida.
+* `getMixMatch.py`: Gera um CSV com os dados necessários para a execução do modelo de uma partida de modo torneio obtida da API da Riot Games.
+* `runModel.py`: Com o output dos dois últimos scripts é possível utilizá-lo para exibir os resultados esperados.
